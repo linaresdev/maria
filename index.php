@@ -1,3 +1,2 @@
-/*
-	Theme Name: Maria
-*/
+
+	
