@@ -7,6 +7,7 @@
  *---------------------------------------------------------
 */
 
+show_admin_bar(false);
 
 ## HELPERS
 if( !function_exists("maria_asset_css") )
