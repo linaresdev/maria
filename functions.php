@@ -7,7 +7,38 @@
  *---------------------------------------------------------
 */
 
+
+## SHOW ? HIDDEN ADMIN TOOL BAR
 show_admin_bar(false);
+
+if( class_exists("Mail"))
+{
+	Mail::tag("sendmail");
+
+	// if( Mail::start() ) {
+		
+	// 	// Mail::from("info@iipec.net", "IIPEC");
+	// 	// Mail::subject("Envio de correo empresarial");
+	// 	// Mail::to("rlinareslf@gmail.com");
+	// 	//Mail::sendHtml("<h1> Ramon Linares </h1>");
+		
+
+	// }
+}
+
+
+## LOGIN
+add_filter( 'login_headerurl', function(){
+	return home_url();
+});
+add_filter( 'login_headertext', function(){
+	return 'INPROER';
+});
+
+add_action( 'login_redirect', function(){
+	return "login.php";
+});
+
 
 ## HELPERS
 if( !function_exists("maria_asset_css") )
