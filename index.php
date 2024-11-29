@@ -4,31 +4,13 @@
 
 
 <article class="container">
-	<heade class="col-12 bg-secondary">
+	<heade class="col-12 bg-secondary header-banner">
 	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 		
 		<div class="carousel-inner">	
 			<div class="carousel-item active">
-				<img src="http://192.168.10.21/wp-content/uploads/2024/10/bitmap0.png" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Third slide label</h5>
-					<p>Some representative placeholder content for the third slide.</p>
-				</div>
-			</div>
-			
-			<div class="carousel-item">
-				<img src="http://192.168.10.21/wp-content/uploads/2024/10/bitmap2.png" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Third slide label</h5>
-					<p>Some representative placeholder content for the third slide.</p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img src="http://192.168.10.21/wp-content/uploads/2024/10/bitmap1.png" class="d-block w-100" alt="...">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Third slide label</h5>
-					<p>Some representative placeholder content for the third slide.</p>
-				</div>
+				<img src="http://192.168.10.21/wp-content/uploads/2024/11/1-1.png" class="d-block w-100" alt="...">
+				
 			</div>
 		</div>
 	</div>
@@ -40,9 +22,6 @@
 	</heade>
 
 	<section class="col-12">
-
-		<article class="border-bottom p-3 mb-4 text-center bg-secondary text-white">
-		</article>
 
 		<!-- <article class="row">
 			<div class="col-lg-4 col-sm-12">

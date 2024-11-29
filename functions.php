@@ -36,7 +36,7 @@ add_filter( 'login_headertext', function(){
 });
 
 add_action( 'login_redirect', function(){
-	return "login.php";
+	return home_url();
 });
 
 

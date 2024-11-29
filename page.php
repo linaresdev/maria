@@ -2,7 +2,7 @@
 
 <article class="container">
 
-	<section class="col-12">
+	<section class="col-12 py-4">
         <?php while(have_posts()):the_post(); ?>
         <h1><?php the_title(); ?></h1>
         <div>
