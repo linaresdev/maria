@@ -23,24 +23,47 @@
 
 	<section class="col-12">
 
-		<!-- <article class="row">
-			<div class="col-lg-4 col-sm-12">
-				<div class="card shadow-sm bg-light rounded-0">
+		<article class="row g-0 bg-light border-top border-3 border-danger p-4">
+			<div class="col-lg-7 col-sm-12">
+				<div class="p-3">
 					<div class="card-body">
-						<h5 class="card-title">Title</h5>
-						<div class="cart-text">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-							Eius tempore perferendis quos aliquam cumque quis ex 
-							accusantium commodi laudantium natus, maxime nostrum unde 
-							eos temporibus suscipit doloremque corporis eligendi hic!
+						<h5 class="card-title mb-3">
+							Contamos con servicios a la medida par austed.
+						</h5>
+
+						<div class="px-3">
+							<div class="mb-3">
+								<h4>Nuestra Oficina</h4>
+								<div class="ps-3">
+									C/ Esteban Rafael Acevedo, Manzana 3430 #6, Res. Prados del Cachón, Lucerna, Apdo. Postal 11516. Sto Dgo.
+									Este. Rep. Dom.							
+								</div>
+							</div>
+
+							<div class="">
+								<h4>Números de contacto</h4>
+								<div class="ps-3">
+									<div>
+										<span class="mdi mdi-phone-classic mdi-24px"></span>
+										809 273 5371
+									</div>
+									<div>
+										<span class="mdi mdi-cellphone mdi-24px"></span>
+										809 861 0499
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>				
 				</div>
 			</div>
-			<div class="col-lg-8 col-sm-12">
-				<div class="card rounded-0">
-					<div class="card-body">
-						<h5 class="card-title">Title</h5>
+			<div class="col-lg-5 col-sm-12">
+				<div class="bg-white shadow">
+					<div class="p-4">
+						<h5 class="card-title mb-3">
+							<span class="mdi mdi-account-tie-voice-outline mdi-24px"></span>
+							Solicitar asistencia personalizada!
+						</h5>
 
 						<form action="#" method="POST">
 							<div class="form-floating mb-2">
@@ -74,12 +97,13 @@
 									id="msjInput"
 									placeholder="Correo Electronico"
 									style="height: 100px"></textarea>
-								<label for="msjInput">Mensaje</label>
+								<label for="msjInput">Breve Descripción.</label>
 							</div>
 
 							<div class="mb-2">
 								<input type="hidden" name="tag" value="sendmail">
-								<button type="submit" class="btn btn-primary rounded-1">
+								<button type="submit" class="btn btn-outline-danger rounded-1">
+									<span class="mdi mdi-send mdi-20px"></span>	
 									Enviar solicitud
 								</button>
 							</div>
@@ -88,11 +112,11 @@
 				</div>
 			</div>
 		</article>
-	</section> -->
+	</section>
 
 	
 	
-<!-- Portafolio -->
+<!-- Portafolio
 <article class="container border-top border-bottom px-0 py-3">
 	<section class="col">
 		<h4 class=" fs-5 py-2 text-uppercase text-center">

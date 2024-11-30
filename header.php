@@ -9,7 +9,7 @@
 </head>
 <body>	
 
-	 <section class="container-fluid bg-danger text-white border border-danger header-top">
+	 <section class="container-fluid bg-danger text-white header-top">
 		<article class="col" style="font-size: 13px;">
 			<div class="d-flex align-items-center">
 				<div class="w-50">
@@ -43,36 +43,36 @@
 
 						<li class="nav-item">
 							<a href="<?php echo home_url('contactos'); ?>" class="nav-link">
-								<span class="mdi mdi-contacts-outline"></span>
+								<span class="mdi mdi-contacts-outline mdi-20px"></span>
 								Contactos
 							</a>
 						</li>
 
 						<li class="nav-item">
 							<a href="<?php echo home_url('nosotros'); ?>" class="nav-link">
-								<span class="mdi mdi-human-male-board-poll"></span>
+								<span class="mdi mdi-account-tie mdi-20px"></span>
 								Nosotros
 							</a>
 						</li>
 
 						<li class="nav-item">
 							<a href="<?php echo home_url('servicios'); ?>" class="nav-link">
-								<span class="mdi mdi-human-dolly"></span>
+								<span class="mdi mdi-human-dolly mdi-20px"></span>
 								Servicios
 							</a>
 						</li>
 
 						<?php if( !is_user_logged_in()): ?>
 						<li class="nav-item">							
-							<a href="wp-login.php" style="margin-bottom: -10px; display:inline-block;" class="btn btn-sm btn-outline-success rounded-pill px-3">
-								<span class="mdi mdi-login"></span> 
+							<a href="wp-login.php" class="nav-link">
+								<span class="mdi mdi-login mdi-20px"></span> 
 								Acceder
 							</a>
 						</li>
 						<?php else: ?>					
 						<li class="nav-item">
 							<a href="<?php echo wp_logout_url(); ?>" class="nav-link">
-								<span class="mdi mdi-logout"></span> 
+								<span class="mdi mdi-logout mdi-20px"></span> 
 								Salir
 							</a>
 						</li>
