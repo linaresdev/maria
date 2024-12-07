@@ -8,22 +8,58 @@
 */
 
 
+## POST TYPE
+// add_action('init', function(){
+// 	$args = array(
+//         'labels' => array(
+//             'name' => 'Portafolios',
+//             'singular_name' => 'portafolio',
+//         ),
+//         'public' => true,
+//         'has_archive' => true,
+//         'show_in_rest' => true,
+//         'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'custom-fields' ),
+//     );
+
+// 	register_post_type( 'portafolio', $args );
+// });
+
+
+
 ## SHOW ? HIDDEN ADMIN TOOL BAR
 show_admin_bar(false);
 
 if( class_exists("Mail"))
 {
-	Mail::tag("sendmail");
-
-	// if( Mail::start() ) {
+	Mail::makePost("contactFromPage", function($app) 
+	{
+		$name 		= filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+		$email 		= filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+		$phone 		= filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_NUMBER_INT);
+		$message 	= filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+		$message 	= filter_var($message, FILTER_SANITIZE_SPECIAL_CHARS);
 		
-	// 	// Mail::from("info@iipec.net", "IIPEC");
-	// 	// Mail::subject("Envio de correo empresarial");
-	// 	// Mail::to("rlinareslf@gmail.com");
-	// 	//Mail::sendHtml("<h1> Ramon Linares </h1>");
-		
+		$app->registerMail([
+			"name" 		=> $name,
+			"subject" 	=> "Solicitud de servicio de $name",
+			"email" 	=> $email,
+			"phone" 	=> $phone,
+			"message" 	=> $message,
+		]);
 
-	// }
+		if( $app->start() ) {
+			$app->from($email, "SERVICIOS INPROER");
+			$app->subject("Solicitud de servicio de $name");
+			$app->to("rlinareslf@gmail.com");
+			$app->sendHtml($message);
+		}
+
+		## Regresa a casa
+		## wp_redirect( $_SERVER["HTTP_REFERER"], 301 ); exit();
+		add_action('template_redirect', function(){
+			wp_redirect( home_url("solicitud-de-servicio-enviada"), 301 ); exit();
+		});
+	});
 }
 
 

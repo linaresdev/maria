@@ -23,12 +23,73 @@
 
 	<section class="col-12">
 
-		<article class="row g-0 bg-light border-top border-3 border-danger p-4">
-			<div class="col-lg-7 col-sm-12">
+		<article class="row g-0 bg-white border-top border-3 border-danger p-4">
+			<div class="col-lg-6 col-sm-12">
+				<div class="bg-light border rounded-1 shadow">
+					<div class="p-4">
+						<h5 class="card-title mb-3">
+							<span class="mdi mdi-account-tie-voice-outline mdi-24px"></span>
+							Solicitar asistencia personalizada!
+						</h5>
+
+						<form action="#" method="POST">
+							<div class="form-floating mb-2">
+								<input type="text" 
+									name="name"
+									class="form-control"
+									id="nameInput"
+									placeholder="Su Nombre"
+									autocomplete="off"
+									required>
+								<label for="nameInput">Su Nombre</label>
+							</div>
+							<div class="form-floating mb-2">
+								<input type="email" 
+									name="email"
+									class="form-control"
+									id="emailInput"
+									placeholder="Correo Electronico"
+									autocomplete="off"
+									required>
+								<label for="emailInput">Correo electronico</label>
+							</div>
+							<div class="form-floating mb-2">
+								<input type="phone" 
+									name="phone"
+									class="form-control"
+									id="phoneInput"
+									placeholder="Numero de contacto"
+									autocomplete="off"
+									pattern="[789][0-9]{9}"
+									required>
+								<label for="emailInput">Numero de contacto</label>
+							</div>
+
+							<div class="form-floating mb-2">
+								<textarea name="message"
+									class="form-control"
+									id="msjInput"
+									placeholder="Correo Electronico"
+									style="height: 100px"></textarea>
+								<label for="msjInput">Breve Descripción.</label>
+							</div>
+
+							<div class="mb-2">
+								<input type="hidden" name="tag" value="contactFromPage">
+								<button type="submit" class="btn btn-outline-secondary rounded-1">
+									<span class="mdi mdi-send mdi-20px"></span>	
+									Enviar solicitud
+								</button>
+							</div>
+						</form>						
+					</div>				
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12">
 				<div class="p-3">
 					<div class="card-body">
 						<h5 class="card-title mb-3">
-							Contamos con servicios a la medida par austed.
+							Contamos con un cartera de servicios a la medida par austed.
 						</h5>
 
 						<div class="px-3">
@@ -57,77 +118,23 @@
 					</div>				
 				</div>
 			</div>
-			<div class="col-lg-5 col-sm-12">
-				<div class="bg-white shadow">
-					<div class="p-4">
-						<h5 class="card-title mb-3">
-							<span class="mdi mdi-account-tie-voice-outline mdi-24px"></span>
-							Solicitar asistencia personalizada!
-						</h5>
-
-						<form action="#" method="POST">
-							<div class="form-floating mb-2">
-								<input type="text" 
-									name="name"
-									class="form-control"
-									id="nameInput"
-									placeholder="Su Nombre">
-								<label for="nameInput">Su Nombre</label>
-							</div>
-							<div class="form-floating mb-2">
-								<input type="email" 
-									name="email"
-									class="form-control"
-									id="emailInput"
-									placeholder="Correo Electronico">
-								<label for="emailInput">Correo electronico</label>
-							</div>
-							<div class="form-floating mb-2">
-								<input type="phone" 
-									name="phone"
-									class="form-control"
-									id="phoneInput"
-									placeholder="Numero de contacto">
-								<label for="emailInput">Numero de contacto</label>
-							</div>
-
-							<div class="form-floating mb-2">
-								<textarea name="message"
-									class="form-control"
-									id="msjInput"
-									placeholder="Correo Electronico"
-									style="height: 100px"></textarea>
-								<label for="msjInput">Breve Descripción.</label>
-							</div>
-
-							<div class="mb-2">
-								<input type="hidden" name="tag" value="sendmail">
-								<button type="submit" class="btn btn-outline-danger rounded-1">
-									<span class="mdi mdi-send mdi-20px"></span>	
-									Enviar solicitud
-								</button>
-							</div>
-						</form>						
-					</div>				
-				</div>
-			</div>
 		</article>
 	</section>
 
 	
 	
-<!-- Portafolio
-<article class="container border-top border-bottom px-0 py-3">
+	<!-- Portafolio -->
+	<article class="bg-dark container border-top border-bottom px-0 py-3 text-secondary">
 	<section class="col">
-		<h4 class=" fs-5 py-2 text-uppercase text-center">
+		<h4 class=" fs-5 py-3 text-uppercase text-center border-bottom border-secondary">
 			Proyectos
 		</h4>
 
-		<div class="row g-2">
+		<div class="row g-2 px-3">
 			<div class="col-lg-4 col-md-12 com-sm-6">
-				<div class="card rounded-0 pt-2 bg-white">
+				<div class="rounded-1 p-3">
 					<div class="card-body">
-						<h5 class="card-title fs-6 text-uppercase text-light-emphasis">
+						<h5 class="fs-6 text-uppercase">
 							Ampliación Bohío, MARMOTECH
 						</h5>
 						<div class="card-text">
@@ -138,17 +145,17 @@
 							unos para dar servicio a mina de piedra coralina en Boca chic.', 0, 150).' ...'
 							?>
 						</div>
-						<div class="text-end">
-							<a href="#" class="btn btn-sm btn-light rounded-pill px-3">Leer más.</a>
+						<div class="py-1">
+							<a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3">Leer más.</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-lg-4 col-md-12 com-sm-6">
-				<div class="card rounded-0 pt-2 bg-white">
+				<div class="rounded-1 p-3">
 					<div class="card-body">
-						<h5 class="card-title fs-6 text-uppercase text-light-emphasis">
+						<h5 class="fs-6 text-uppercase">
 							Mediterráneo Internacional
 						</h5>
 						<div class="card-text">
@@ -161,17 +168,17 @@
 							10% avance)', 0, 150)." ...";
 							?>
 						</div>
-						<div class="text-end">
-							<a href="#" class="btn btn-sm btn-light rounded-pill px-3">Leer más.</a>
+						<div class="pt-2">
+							<a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3">Leer más.</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="col-lg-4 col-md-12 com-sm-6">
-				<div class="card rounded-0 pt-2 bg-white">
+				<div class="rounded-1 p-3">
 					<div class="card-body">
-						<h5 class="card-title fs-6 text-uppercase text-light-emphasis">
+						<h5 class="fs-6 text-uppercase">
 							Bohío, MARMOTECH
 						</h5>
 						<div class="card-text overflow-auto">
@@ -182,8 +189,8 @@
 							mina de piedra coralina.', 0, 150)." ...";
 							?>
 						</div>
-						<div class="text-end">
-							<a href="#" class="btn btn-sm btn-light rounded-pill px-3">Leer más.</a>
+						<div class="pt-2">
+							<a href="#" class="btn btn-sm btn-outline-light rounded-pill px-3">Leer más.</a>
 						</div>
 					</div>
 				</div>
@@ -193,7 +200,7 @@
 	</section>
 </article>
 <!-- Suplidores -->
-<article class="container pt-3">
+<article class="bg-white container p-3">
 
 	<section class="col-12">
 
