@@ -10,7 +10,7 @@
 ?>
 <article class="container">
     <div class="row pt-5">
-        <table class="table table-bordered">
+        <table class="table table-bordered m-0">
             <tbody>
                 <tr>
                     <th class="bg-light p-4 text-center">
