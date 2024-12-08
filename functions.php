@@ -48,10 +48,10 @@ if( class_exists("Mail"))
 		]);
 
 		if( $app->start() ) {
-			$app->from($email, "SERVICIOS INPROER");
-			$app->subject("Solicitud de servicio de $name");
-			$app->to("rlinareslf@gmail.com");
-			$app->sendHtml($message);
+			$app->from("info@iipec.net", "INPROER");
+			$app->subject("Solicitud de servicio");
+			$app->to($email);
+			$app->sendHtml('<p>Solicitud recivida!</p> <p>Le estaremos asignando un agente a la menor brevedad posible.</p>');
 		}
 
 		## Regresa a casa
